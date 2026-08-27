@@ -1,0 +1,25 @@
+{
+  "name": "tree-sitter-portfile",
+  "version": "0.1.0",
+  "description": "Tree-sitter grammar for MacPorts Portfiles",
+  "main": "bindings/node",
+  "keywords": [
+    "tree-sitter",
+    "parsing",
+    "macports",
+    "portfile",
+    "tcl"
+  ],
+  "license": "MIT",
+  "tree-sitter": [
+    {
+      "scope": "source.portfile",
+      "file-types": [
+        "Portfile"
+      ]
+    }
+  ],
+  "dependencies": {
+    "tree-sitter-cli": "^0.25.0"
+  }
+}
