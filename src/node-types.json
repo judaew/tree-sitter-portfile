@@ -1,0 +1,352 @@
+[
+  {
+    "type": "array_index",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "braced_word_simple",
+          "named": true
+        },
+        {
+          "type": "command_substitution",
+          "named": true
+        },
+        {
+          "type": "escaped_character",
+          "named": true
+        },
+        {
+          "type": "quoted_word",
+          "named": true
+        },
+        {
+          "type": "simple_word",
+          "named": true
+        },
+        {
+          "type": "variable_substitution",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "braced_word",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "command",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "braced_word_simple",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "braced_word_simple",
+          "named": true
+        },
+        {
+          "type": "command_substitution",
+          "named": true
+        },
+        {
+          "type": "escaped_character",
+          "named": true
+        },
+        {
+          "type": "quoted_word",
+          "named": true
+        },
+        {
+          "type": "simple_word",
+          "named": true
+        },
+        {
+          "type": "variable_substitution",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "command",
+    "named": true,
+    "fields": {
+      "arguments": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "word_list",
+            "named": true
+          }
+        ]
+      },
+      "name": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "array_index",
+            "named": true
+          },
+          {
+            "type": "braced_word",
+            "named": true
+          },
+          {
+            "type": "command_substitution",
+            "named": true
+          },
+          {
+            "type": "escaped_character",
+            "named": true
+          },
+          {
+            "type": "license",
+            "named": false
+          },
+          {
+            "type": "maintainers",
+            "named": false
+          },
+          {
+            "type": "platforms",
+            "named": false
+          },
+          {
+            "type": "quoted_word",
+            "named": true
+          },
+          {
+            "type": "simple_word",
+            "named": true
+          },
+          {
+            "type": "unpack",
+            "named": true
+          },
+          {
+            "type": "variable_substitution",
+            "named": true
+          }
+        ]
+      },
+      "value": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "braced_word_simple",
+            "named": true
+          },
+          {
+            "type": "simple_word",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "command_substitution",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "command",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "quoted_word",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "command_substitution",
+          "named": true
+        },
+        {
+          "type": "escaped_character",
+          "named": true
+        },
+        {
+          "type": "variable_substitution",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "source_file",
+    "named": true,
+    "root": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "command",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "variable_substitution",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "array_index",
+          "named": true
+        },
+        {
+          "type": "simple_word",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "word_list",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "array_index",
+          "named": true
+        },
+        {
+          "type": "braced_word",
+          "named": true
+        },
+        {
+          "type": "command_substitution",
+          "named": true
+        },
+        {
+          "type": "escaped_character",
+          "named": true
+        },
+        {
+          "type": "quoted_word",
+          "named": true
+        },
+        {
+          "type": "simple_word",
+          "named": true
+        },
+        {
+          "type": "unpack",
+          "named": true
+        },
+        {
+          "type": "variable_substitution",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "\n",
+    "named": false
+  },
+  {
+    "type": "\"",
+    "named": false
+  },
+  {
+    "type": "$",
+    "named": false
+  },
+  {
+    "type": "(",
+    "named": false
+  },
+  {
+    "type": ")",
+    "named": false
+  },
+  {
+    "type": ";",
+    "named": false
+  },
+  {
+    "type": "[",
+    "named": false
+  },
+  {
+    "type": "]",
+    "named": false
+  },
+  {
+    "type": "comment",
+    "named": true,
+    "extra": true
+  },
+  {
+    "type": "escaped_character",
+    "named": true
+  },
+  {
+    "type": "license",
+    "named": false
+  },
+  {
+    "type": "maintainers",
+    "named": false
+  },
+  {
+    "type": "platforms",
+    "named": false
+  },
+  {
+    "type": "simple_word",
+    "named": true
+  },
+  {
+    "type": "unpack",
+    "named": true
+  },
+  {
+    "type": "{",
+    "named": false
+  },
+  {
+    "type": "}",
+    "named": false
+  }
+]
