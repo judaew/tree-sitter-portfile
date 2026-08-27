@@ -4,10 +4,20 @@
 ;;; Code:
 
 (require 'treesit)
+(require 'portfile-ts-mode-complete-keywords)
 
 (defgroup portfile-ts nil
   "Tree-sitter support for MacPorts Portfiles."
   :group 'languages)
+
+(defun portfile-ts-mode-completion-at-point ()
+  "Complete MacPorts Portfile keywords."
+  (let ((start (save-excursion
+                 (skip-chars-backward "[:alnum:]_.-")
+                 (point))))
+    (list start
+          (point)
+          portfile-ts-mode-complete-keywords)))
 
 (define-derived-mode portfile-ts-mode prog-mode "Portfile"
   "Major mode for MacPorts Portfiles."
@@ -15,6 +25,10 @@
   ;; Portfiles use spaces for indentation
   (setq-local indent-tabs-mode nil)
   (setq-local tab-width 4)
+
+  (setq-local completion-at-point-functions
+              (cons #'portfile-ts-mode-completion-at-point
+                    completion-at-point-functions))
 
   (treesit-parser-create 'portfile)
 
