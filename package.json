@@ -1,6 +1,6 @@
 {
   "name": "tree-sitter-portfile",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Tree-sitter grammar for MacPorts Portfiles",
   "main": "bindings/node",
   "keywords": [
@@ -20,6 +20,6 @@
     }
   ],
   "dependencies": {
-    "tree-sitter-cli": "^0.25.0"
+    "tree-sitter-cli": "^0.26.0"
   }
 }
