@@ -19,13 +19,11 @@
     "description": "Portfile grammar for tree-sitter",
     "authors": [
       {
-        "name": "Vadym-Valdis Yudaiev",
-        "url": ""
+        "name": "Vadym-Valdis Yudaiev"
       }
     ],
     "links": {
-      "repository": "https://github.com/judaew/tree-sitter-portfile",
-      "funding": ""
+      "repository": "https://github.com/judaew/tree-sitter-portfile"
     }
   },
   "bindings": {
